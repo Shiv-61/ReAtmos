@@ -1,0 +1,162 @@
+.header {
+  border: 2px solid;
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.app-container.light .header {
+  background-color: #ffffff;
+  border-color: #e0e0e0;
+}
+
+.app-container.dark .header {
+  background-color: #1a1a1a;
+  border-color: #444;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  transition: color 0.3s ease;
+}
+
+.app-container.light .logo-text {
+  color: #000000;
+}
+
+.app-container.dark .logo-text {
+  color: #ffffff;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.5rem;
+}
+
+.app-container.light .nav-link {
+  color: #000000;
+}
+
+.app-container.light .nav-link:hover {
+  color: #0066cc;
+  border-bottom-color: #0066cc;
+}
+
+.app-container.dark .nav-link {
+  color: #ffffff;
+}
+
+.app-container.dark .nav-link:hover {
+  color: #64b5f6;
+  border-bottom-color: #64b5f6;
+}
+
+.theme-toggle {
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.app-container.light .theme-toggle {
+  border-color: #000000;
+  color: #000000;
+}
+
+.app-container.light .theme-toggle:hover {
+  background-color: #f0f0f0;
+  border-color: #0066cc;
+  color: #0066cc;
+}
+
+.app-container.dark .theme-toggle {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.app-container.dark .theme-toggle:hover {
+  background-color: #333333;
+  border-color: #64b5f6;
+  color: #64b5f6;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 0;
+  }
+
+  .header-container {
+    gap: 1rem;
+  }
+
+  .header-top {
+    width: 100%;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .theme-toggle {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
