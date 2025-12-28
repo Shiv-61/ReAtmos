@@ -5,11 +5,11 @@ function Header() {
   const { isDark, toggleTheme } = useTheme()
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-300 dark:border-gray-700 
-      py-3 backdrop-blur-md backdrop-saturate-150 
-      bg-white/70 dark:bg-slate-950/70 transition-colors duration-300">  
+    <header className="fixed top-0 left-0 w-full z-50 border-b border-gray-300 dark:border-gray-700 
+      py-2 backdrop-blur-md backdrop-saturate-150 
+      bg-white/70 dark:bg-slate-950/70 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="flex justify-between items-center mb-3">
+        <div className="flex justify-between items-center mb-1">
           <h1 className="text-2xl font-bold text-black dark:text-white">ReAtmos</h1>
 
           <button

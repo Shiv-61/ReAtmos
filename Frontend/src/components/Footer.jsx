@@ -5,8 +5,8 @@ function Footer() {
 
   return (
     <footer className="border-t border-gray-300 dark:border-gray-700 
-      py-4 bg-white dark:bg-slate-950 transition-colors duration-300">
-      
+      py-2 bg-white dark:bg-slate-950 transition-colors duration-300">
+
       <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
         <span className="text-base font-semibold text-black dark:text-white">
           FOOTER
